@@ -1,0 +1,116 @@
+.body{
+  position: relative;
+}
+/* Overriding .navbar-light and .navbar-dark atributes */
+.navbar-light{
+  background-color:#5cb8ff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar-dark{
+  background-color:#005477;
+  color:#FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* High contrast styles */
+.navbar-hc{
+  background-color:#000000;
+  font-size: 16px;
+  font-weight: bold;
+  border-style: solid;
+}
+.navbar-hc .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+.navbar-hc .navbar-nav .dropdown-item {
+  font-weight: bold;
+}
+.navbar-hc .navbar-toggler {
+  background-color: #FFFFFF;
+  }
+.btn-hc {
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+.form-check-label-hc {
+  font-weight: #FFFFFF;
+}
+.form-check-label-hc {
+  font-weight: #FFFFFF;
+}
+
+#comp-think-intro{
+  background-image: url("resources/img/background.png");
+  color:#FFFFFF;
+  padding-top: 30px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#comp-think-intro > p {
+  padding-top: 30px;
+}
+
+#comp-logo{
+  background-color:#5cb8ff ;
+}
+#algorithms{
+  scroll-margin-top: 30px;
+  color:#FFFFFF;
+  background-color:#4b9038;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#graphs{
+  height: 100%;
+  color:#FFFFFF;
+  background-color:#a04cb1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#complexity{
+  height: 100%;
+  color:#FFFFFF;
+  background-color:#3e916a;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#recursion{
+  height: 100%;
+  background-color:#c54b68;
+  color:#FFFFFF;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu {
+  position: fixed;
+  width: auto;
+
+}
+
+ul.nav-pills {
+  top: 20px;
+  position: fixed;
+}
+div.col-sm-9 div {
+  height: 250px;
+  font-size: 28px;
+}
+
+.sidebar{
+  position: fixed;
+  padding-top: 10px;
+  top: 10px;
+}

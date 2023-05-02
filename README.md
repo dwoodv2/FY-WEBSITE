@@ -1,0 +1,3 @@
+# Important
+# Our project is in master!
+# We were planning on deleting the old branches but we don't have permissions...

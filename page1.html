@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="stylesheet.css" rel="stylesheet">
+  <!--Adding favicon (icon on the top of the page)-->
+  <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico">
+  <title>Computational Thinking | Home</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar-top" style="z-index: 9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="resources/img/comp-logo.png" alt="Computational Thinking Logo" width="200" height="35" id="comp-logo">
+      </a>
+      <div class="ml-auto col-auto">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-dropdown">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Algorithms
+        </a>
+        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="page1.html#item-1-3">Processes and Operations</a></li>
+          <li><a class="dropdown-item" href="page1.html#item-1-5">Examples</a></li>
+          <li><a class="dropdown-item" href="page1.html#item-1-8">Excersises</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Graphs
+      </a>
+      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="page1.html#item-2-1">Data with connections</a></li>
+        <li><a class="dropdown-item" href="page1.html#item-2-2">Directed graphs</a></li>
+        <li><a class="dropdown-item" href="page1.html#item-2-3">Undirected graphs</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Complexity
+    </a>
+    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+      <li><a class="nav-link ml-3 my-1" href="#item-3-1">Introductions</a></li>
+      <li><a class="nav-link ml-3 my-1" href="#item-3-2">Definitions</a></li>
+      <li><a class="nav-link ml-3 my-1" href="#item-3-3">O Notation</a></li>
+      <li><a class="nav-link ml-3 my-1" href="#item-3-4">Excersises</a></li>
+
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+    aria-expanded="false">
+    Recursion
+  </a>
+  <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+    <li><a class="nav-link ml-3 my-1" href="#item-4-1">Introductions</a></li>
+    <li><a class="nav-link ml-3 my-1" href="#item-4-2">Definitions</a></li>
+    <li><a class="nav-link ml-3 my-1" href="#item-4-3">How recursion works</a></li>
+    <li><a class="nav-link ml-3 my-1" href="#item-4-3">How recursions work</a></li>
+    <li><a class="nav-link ml-3 my-1" href="#item-4-4">Exersices</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+<button class="btn btn-warning btn-lg px-1 py-1 my-1 mx-1" data-bs-toggle="modal" data-bs-target="#accessibility-tab">
+  <img src="resources/img/accessibility_new_FILL0_wght400_GRAD0_opsz48.png" width="30" alt="Accessibility Tab">
+</button>
+</div>
+</nav>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="d-flex vh-100 flex-column align-items-sm-start align-items-center pt-2">
+                <div class="bd-example">
+                    <div class="d-flex flex-nowrap w-100">
+                      <div class="col flex-nowrap w-100">
+                        <nav id="sidebar" style="top: 80px;z-index: 8;" class="nav nav-pills  d-none d-lg-block sticky-top mb-sm-auto mb-0 align-items-center flex-column" data-bs-spy="scroll">
+                          <div class="container-fluid">
+                            <nav class="nav nav-pills flex-column">
+                            
+                                <a class="nav-link ml-3 my-1" href="#item-1-1">Algorithm</a>
+                                <!--<a class="nav-link ml-3 my-1" href="#item-1-2">Introduction</a>--> 
+                                <ul>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-1-3">Processes and Operations</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-1-5">Examples</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-1-8">Exersises</a></li>
+                              </ul>
+
+                                <a class="nav-link ml-3 my-1" href="#item-2">Graphs</a>
+                                <ul>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-2-1">Data with connections</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-2-2">Directed graphs</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-2-3">Undirected graphs</a></li>
+                              </ul>
+                              <a class="nav-link ml-3 my-1" href="#item-3">Complexity</a>
+                               <nav class="nav nav-pills flex-column">
+                                <ul>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-3-1">Introductions</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-3-2">Definitions</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-3-3">O Notation</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-3-4">Excersises</a></li>
+                                </ul>
+                                <a class="nav-link ml-3 my-1" href="#item-4">Recursion</a>
+                               <nav class="nav nav-pills flex-column">
+                                <ul>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-4-1">Introductions</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-4-2">Definitions</a></li>
+                                  <li><a class="nav-link ml-3 my-1" href="#item-4-3">How recursion works</a></li>
+                                  
+
+                                </ul>
+
+                                <nav class="nav nav-pills flex-column">
+                                 <ul>
+                                   <li><a class="nav-link ml-3 my-1" href="#item-4-1">Introductions</a></li>
+                                   <li><a class="nav-link ml-3 my-1" href="#item-4-3">How recursions work</a></li>
+                                   <li><a class="nav-link ml-3 my-1" href="#item-4-4">Exersices</a></li>
+                                 </ul>
+                              </nav>
+                            </nav>
+                          </div>
+                        </nav>
+                      </nav>
+                    </div>
+                      <div class="col-10" data-spy="scroll" data-target="#sidebar" data-offset="100" id="mainconent" style="padding-top: 70px;">
+                        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2" style=" overflow-y: scroll; height: auto;">
+                          <h3 id="item-1">Algorithm</h3>
+                          <h5 id="item-1-1">Introduction</h5>
+                          <p>Many times we will encounter a challenge or problem. An algorithm is a <b>coherent, step by step solution</b>.
+                            They work by <b>recieving an input (or multiple inputs)</b> and <b>preforming a process or operations</b> on said inputs to <b>produce the desired output(s)</b>.
+                            Instructions need to be <b>coherent</b> to allow a person or computer to preform the <b>correct steps</b> when following an algorithm.
+                            Inputs of an algorithm have to be <b>relevent</b> or the algorithm won't be able to preform the logical steps to yeild the correct solution.</p>
+                            </p>
+                          <h5 id="item-1-2">Processes and Operations</h5>
+                          <h6 id="item-1-3">Definitions</h6>
+                          <p>
+                            <b>Proccess</b>: A series of <b>operations</b> <br>
+                            <b>Operation</b>: A step required in order to accomplish a specific task <br>
+                            <br>
+                            Processes and operations have a <b>one-to-many relationship</b>. One process can consist of many intructions.
+                          </p>
+                          <h5 id="item-1-5">Examples</h5>
+                          <h6 id="item-1-6">Example 1</h6>
+                          <p>
+                            Jane wants to eat a cheese sandwich. She does this by taking a slice of chesse, inserting it between two slices of bread and cutting her sandwich diagonally.
+                            Jane asks her friend Alice
+                            to make her a cheese sandwich. Alice has never made a cheese sandwich before and so asks Jane for instructions.
+                          </p>
+                          <p>
+                            "Get two slices of bread and one slice of cheese"
+                            <br> "Put the slice of cheese between the two slices of bread"
+                            <br> "Finally slice the sandwich in half diagonally"
+                          </p>
+                          <p>
+                            In this example, <b>the two slices of bread and slice of cheese are the inputs</b>, the <b>operations</b> involved were <b>
+                                putting the slice of cheese between the two slices of bread
+                                and slicing the sandwich in half diagonally
+                            </b> and the <b>output</b> from this algorithm is <b>Janes version of a cheese sandwich</b>. Something to keep in mind is that many algorithms
+                            can produce the same result by using different <b>inputs and processes/ operations</b> (like if the input was an already prepared cheese sandwich and the process carried out was just slicing it diagonally).
+                            Another thing to note is the <b>Jane</b> was not very specific about how to cut the sandwich. This is because she infers that Alice already has <b>assumed knowledge</b> of how to cut
+                            a sandwich in half, how diagonal she wanted the sandwich to be cut, what she would need to cut the sandwich, etc. One last thing to mention is that what Jane sees as a "Cheese Sandwich" will not
+                            always correlate to somebody else's version of a cheese sandwich. You might make a cheese sandwich completely different to how Jane makes hers.
+                          </p>
+                          <p>
+                            It is important to:
+                            <ul>
+                              <li>The <b>inputs</b> of an algorithm must match the inputs of the algorithm</li>
+                              <li>Make sure that the <b>process/ operations</b> are clear and understandable so they can be followed</li>
+                              <li>Have a clear idea of the <b>output</b> you want the alorithm to produce</li>
+                          </p>
+                          
+                          <h6 id="item-1-7">Example 2</h6>
+                          <p>
+                            A machine takes integers, multiplies them by 5 and outputs the result.
+                            <br>
+                            <br>
+                            In this example, the integers are the input, the multiplication by 5 is the operation and the result of the multiplication is the output.
+                            You wouldn't input a string or character as the the input doesn't match the input required and you can't multiply words or letters.
+                            <br>
+                            <br>
+                            Let's have a go at some exersices.
+                          </p>
+                          <h5 id="item-1-8">Exersises</h5>
+                          <h6 id="item-1-9">Exersise 1</h6>
+                          <p>
+                            1) Steve has two natural numbers: 3 and 17
+                            <br>
+                            <br>
+                            a) Write down <b>at least 3 different</b> algorithms so that if he was to input the integer 3 he would get an output of 17:
+                            <br>(3 Marks)
+                            <br><br>
+                            <br><br>
+                            <br><br>
+                            <br>b) Write down which of the three algorithms was the most efficient:
+                            <br>(1 Marks)
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br><br>
+                            <br>
+                          </p>
+                          <h6 id="item-1-10">Exersise 2</h6>
+                          <p>
+                            What is the difference between a <b>proccess</b> and an <b>operation</b>?
+                            <br>(2 Marks)
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br><br>
+                            <br>
+                          </p>
+
+                          <h3 id="item-2">Graphs</h3>
+                          <h5 id= "item-2-1"> Data with connections</h5>
+                          <p>Sometimes we want to be able to describe data that we may picture as follows</p>
+                          <div class = 'row'> <!--Need to center images and text here-->
+                            <div class = 'col-5'> 
+                              <center><img src="resources/img/Image-notes-graph-1.png" alt="Demonstration of direced graph"></center>
+                              <div class="row">
+                                <div class="col-12"><p class = 'text-center'>Directed graph</p></div>
+                              </div>
+                            </div>
+                            <div class = 'col-2 align-middle '></div><ol>
+                              <li>it doesnt satisfy the breaking condtion also known as base case meaning the recursive algorithm calls itself again<br></li>
+                              <ol>It must also keep track of all values on that specific call of the algorithm<br>
+                              Recursive algotithm calls itself again <br></ol>
+                              
+                          </ol>
+                          <ol>
+                           <li>if it does satisfy the breaking condtion then: <br></li> 
+                           <ol> then the recusion algoraithm stops calling itself<br>
+                              then for every time it has recalled itself it will output or reuse values on the highest layer of the stack and 
+                              input those into that of the stack below it until the stack is empty<br></ol>
+                             
+                          </ol>
+                            <div class = 'col-5'> 
+                              <img src="resources/img/Image-notes-graph-2.png" alt="Demonstration of direced graph">
+                              <div class="row">
+                                <div class="col-12"><p class = 'text-center'>Undirected graph</p></div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <p>
+                            Here we have data items (there may be names associated with the <p ></p><b>∙</b> items in
+                            the picture) that have connections between them. Sometimes these connections
+                            only work in one direction, and sometimes they go both ways. There are many
+                            examples of this kind, and maybe the most natural one is that of some kind of map,
+                            for example for a transport system, but these might also be the description for moves in a game. Or, for example, the first picture might describe which people in
+                            a small group know each other, and the second might describe whether a person
+                            likes another. The possibilities are endless.
+                          </p>
+                          <p>
+                            We need to make formal what we mean by these pictures in such a way that
+                            we are able to use them in an algorithm. We say that a graph has
+                          </p>
+                          <ul>
+                            <li> <b>nodes</b>, which are indicated as ∙ in the picture and</li>
+                            <li> <b>edges</b>, which are the connections between the nodes.</li>
+                          </ul>
+                          <p>
+                            Our pictures suggest that we can treat all the nodes as the same somehow
+                            since they are all marked by ∙, but any description of a graph will have to have
+                            distinct names for the nodes, and we find it useful to think of them as forming a
+                            set.
+                          </p>
+                          <p>
+                            We may have even more data to include in our picture, and we talk about that
+                            after looking at formal definitions.
+                          </p>
+
+                          <h5 id = 'item-2-2'>Directed Graphs</h5>
+                          We have to make a distinction between the situation where the edges are directed
+                          and that where they work both ways.
+                          If there is an edge from a node <b><em>X</em></b> to a node <b><em>Y</em></b> we say that <b> <em>x</em> is a direct neighbour
+                          of <em>y</em></b>.
+
+                          <div class = 'row'>
+                            <div class="col-3">
+
+                            </div>
+                            <div class = 'col-6' style="position: cneter; background-color: bisque;">
+                              <div class="row">
+                                  <div class="col-12" style="background-color: red;">
+                                    <h6 style="color: azure; font-size: 18px;">Definition 1: direct graph</h6>
+                                  </div>
+                                  <p style="color: blue">A directed graph is given by a set <em>N</em> of nodes and a set</p>
+                                  <p style="text-align: center; font-size: 18px; color: blue"><em>E ⊆ ( N x N) \ {(n, n) | n ∈ N}</em></p>
+                                  <p style="color: blue">of edges.</p>
+                              </div>
+                              
+                            </div> 
+                            <div class="col-3">
+
+                            </div>
+                          </div>
+                          <p></p>
+                          <p>In the above definition, we say that the edges in <b><em>E</em></b> are pairs of nodes (via
+                            E ⊆ ( N x N)) and we exclude edges from a node to itself (via ∖{(n, n) | n ∈ N}).
+                            Based on this definition, the following defines a directed graph:
+                          </p>
+
+                          <div class="row">
+                            <div class="col-6">
+                              <p style="text-align: center; font-size: 18px;"><em>N = {a, b, c, d, e},</em></p>
+                            </div>
+                            <div class="col-6">
+                              <p style="text-align: center; font-size: 18px;"><em>E = {(a, b), (b, a), (b, c) , (c, b), (d, a), (d, b)}</em></p>
+                            </div>
+                          </div>
+
+                          <p>We may picture this graph as shown in Figure 2.
+                            The example should make it clear that we interpret an edge of the form <em>(x, y)</em>
+                            as a connection from <b><em>x</em></b> to <b><em>y</em></b>.
+                            This leaves us with explaining why we are excluding edges of the form <em>(n, n)</em>
+                            where <em>n ∈ N</em>. This would be an edge that goes from a node to itself</p>
+
+                          <div class="row">
+                            <div class="col-12">
+                              <!--Insert image here from the notes-->
+                              <center><img src="resources/img/Figure2_ a direceted graph.png" alt="Demonstration of direced graph"></center>
+                              <p style="text-align: center;">Figure 2:  A directed grap</p>
+                            </div>
+                          <p>
+                            This is not allowed according to our definition. If we wanted this to be a feature
+                            we would have to talk about a directed graph with loops but we will not use those
+                            in this course unit.
+
+                            <p>Also note that by saying that the set of edges forms a subset of the set <em>N × N</em>
+                              we ensure that there is at most one edge from a node <em>x</em> to a node <em>y</em>.</p>
+                            
+                            <p>There may be reasons you would like to allow there to be more than one edge,
+                              in which case we would speak of a (directed) graph with multi-edges. For this
+                              we need to change the formal definition, but we will not be concerned with that
+                              possibility in this unit so we do not look into the details.</p>
+                          </p>               
+                          </div>
+
+                          <h5 id = 'item-2-3'>Undirected graphs</h5>
+                          <p>What is the difference between a directed and an undirected graph? We think of
+                            all the connections as working both ways, but what does that mean for our formal
+                            definition?
+                          </p>
+                          <p>There are two solutions one might adopt here. We might either still use a set
+                            <em>E ⊆ N × N</em> to give the edges, but demand that <em>(x, y) ∈ E</em> implies <em>(y, x) ∈ E</em>, to
+                            ensure that all edges go both ways. But that would make the set <em>E</em> twice as big as
+                            it needs to be.
+                          </p>
+
+                          <p>Instead we use 2-element subsets of <em>N</em> to describe the edges of our graph,
+                            making use of one of the features of sets, namely that the order of elements does
+                            not matter.</p>
+                          
+                            <div class = 'row'>
+                              <div class="col-3">
+  
+                              </div>
+                              <div class = 'col-6' style="position: cneter; background-color: bisque;">
+                                <div class="row">
+                                    <div class="col-12" style="background-color: red;">
+                                      <h6 style="color: azure; font-size: 18px;">Definition 2: undirect graph</h6>
+                                    </div>
+                                    <p style = 'color: blue'>An undirected graph is given by a set <em>N</em> of nodes and a set</p>
+                                    <p style="text-align: center; font-size: 18px; color:blue"><em>E ⊆ {{x,y} | x,y ∈ N, x is not equal to y}</em></p>
+                                    <p style = 'color: blue'>of edges.</p>
+                                </div>
+                                
+                              </div> 
+
+                          <p>If <em>{x, y} ∈ E</em>, we say that <em>x</em> and <em>y</em> are neighbours, i.e., <em>x</em> is a neighbour of <em>y</em>
+                            and <em>y</em> is a neighbour of <em>x</em>.
+                          </p>
+                          <p>
+                            Again we forbid loops by not allowing one-element sets of the form {x} to
+                            define an edge (which would have to be from x to itself). We again do not allow
+                            multi-edges in our definition since we demand that all the edges form a set, which
+                            rules out duplicates. We may now consider the graph
+                          </p>
+
+                          <div class="row">
+                            <div class="col-6">
+                              <p style="text-align: center; font-size: 18px;"><em>N = {a, b, c, d, e},</em></p>
+                            </div>
+                            <div class="col-6">
+                              <p style="text-align: center; font-size: 18px;"><em>E = {(a, b), (b, a), (b, c) , (c, b), (d, a), (d, b)}</em></p>
+                            </div>
+                          </div>
+
+                          <p>which we may picture as shown in Figure 3.</p>
+
+                          <div class="row">
+                            <div class="col-12">
+                              <!--Insert image here from the notes-->
+                              <center><img src="resources/img/Figure3_ an undirected graph.png" alt="Demonstration of undireced graph"></center>
+                              <p style="text-align: center;">Figure 3: an undirected graph</p>
+                            </div>
+                          <p>
+
+                          
+                          <h3 id="item-3">Complexity</h3>
+                          <h5 id="item-3-1">Introduction</h5>
+                          <p>Complexity is the measure the effort it takes to run on some input. It uses the given size of the input, how much time it takes and how much space it takes and uses the worst case senario. It is denoted using O notation and looks like "O(n)" where n is the amount of time or space it would use.</p>
+                          <h4 id="item-3-2">Definitions</h4>
+                          <p>Complexity: Measure the effort it takes to run on some input<br>
+                          <h4 id="item-3-3">O Notation</h4>
+                          <p>To calculate the time complexity of an algorithm, you must count how many steps it would take in a worst case senario:<br><br>
+                              Simple instructions (e.g. print, read): 1 Step (O(n))<br>
+                              If statement: However many steps are in the if statement<br>
+                              If Else statement: Whichever has the most steps<br>
+                              If Elif Else statement: Whichever has the most steps<br>
+                              Loops: The number of steps in the loop multiplied by the number of iterations (O(n*i) where i is the iterations)<br>
+                              Nested Loops: The product of each loops iterations (O(n^j) where j is the number of nested loops)<br><br>
+                              Theses are to be added together (using basic BIDMAS) to produce the time complexity of an algorithm (e.g. O((n^3)+4))
+                              
+                          </p>
+                    
+                          <h4 id="item-3-4">Exersises</h5>
+                          <h5 id="item-3-5">Exersise 1</h5>
+                          <p> What is the O Notation for a nested loop?<br><br><br><br><br>
+                          </p>
+                          <h5 id="item-3-6">Exersise 2</h5>
+                          <p>print("Hello world)<br>
+                          print("Cheesecake")<br>
+                          n = 5<br>
+                          <br>
+                          What is the O Notation for this algorithm?<br><br><br><br><br></p>
+
+                          <h3 id="item-4">Recursion</h3>
+                          <h5 id="item-4-1">Introduction</h5>
+                          <p>Some problems might not be easier to solve via an iterative method, iterate just mean repeat an action 
+                            like how you continually move your mouth whilst you eat anyway, however iteration may not always be the best way to go about solving a problem 
+                            this is due to how some data structures work such as a binary trees</p>
+                          <h4 id="item-4-2">Definitions</h4>
+                          <p>Recursion: This the process by which a algorithm may call itself again and again until a condition is met e.g., does the number of items 
+                            in the list equal zero if not input the list of items into the algorithm again. <br>
+                            <p>Stack: this a data structure which the first element to be added will be the last one to be called<br>
+                          <h4 id="item-4-3">How recursion works:</h4>
+                          <p>
+                              Recursive algoithm is called with given input<br>
+                              Does input satsify the breaking condition
+                              <ol>
+                              <ul>
+                                  <li>it doesnt satisfy the breaking condtion also known as base case meaning the recursive algorithm calls itself again<br></li>
+                                  <ol>It must also keep track of all values on that specific call of the algorithm<br>
+                                  Add variables, data structures etc. to stack,<br>
+                                  Recursive algotithm calls itself again <br></ol>
+                                  
+                              </ul>
+                              <ul>
+                               <li>if it does satisfy the breaking condtion then: <br></li> 
+                               <ul> then the recusion algoraithm stops calling itself<br>
+                                  then for every time it has recalled itself it will output or reuse values on the highest layer of the stack and 
+                                  input those into that of the stack below it until the stack is empty<br></ol>
+                                 
+                              </ul>
+
+                              </ol>
+                              
+                          </p>
+                    
+                          <h4 id="item-4-4">Exersises</h5>
+                          <h5 id="item-4-5">Exersise 1</h5>
+                          <p> What is the O Notation for a nested loop?<br><br><br><br><br>
+                          </p>
+                          <h5 id="item-4-6">Exersise 2</h5>
+                          <p>print("Hello world)<br>
+                          print("Cheesecake")<br>
+                          n = 5<br>
+                          <br>
+                          What is the O Notation for this algorithm?<br><br><br><br><br></p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="accessibility-tab">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Accessibility Settings</h4>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="hc-toggle">High contrast mode</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="hc-toggle" onchange = "highContrast()">
+          </div>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="dm-toggle">Dark mode</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="dm-toggle" onchange = "darkMode()">
+          </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('body').scrollspy({ target: '#navbarNav' });
+  });
+</script>
+  <!-- Importing Bootstrap Bundle JavaScript with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" i
+  ntegrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>  
+  <script src="accessibility.js"></script>
+</body>
+
+</html>
