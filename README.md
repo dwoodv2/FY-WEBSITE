@@ -1,3 +1,2 @@
-# Important
-# Our project is in master!
-# We were planning on deleting the old branches but we don't have permissions...
+# Access the website here
+https://dwoodv2.github.io/FY-WEBSITE/
