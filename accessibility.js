@@ -66,11 +66,14 @@ function highContrast() {
                 element.className = "btn btn-lg btn-hc";        
             });
         }
-        var maincontentold = document.getElementById("maincontent").style;
-        var maincontent = maincontentold
-        maincontent.backgroundColor = "#000000";
-        maincontent.color = "#FFFFFF"
-        maincontent.borderStyle = "solid" ;
+        else {
+            var maincontentold = document.getElementById("maincontent").style;
+            var maincontent = maincontentold
+            maincontent.backgroundColor = "#000000";
+            maincontent.color = "#FFFFFF"
+            maincontent.borderStyle = "solid" ;
+        }
+        
         
 
     }
